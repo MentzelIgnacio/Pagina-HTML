@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
     margin: 0;
     padding: 0;
@@ -6,7 +5,6 @@
     font-family: 'Segoe UI', sans-serif;
 }
 
-/* Fondo principal */
 body {
     background-image: url("../img/montanas-italia.jpg");
     background-size: cover;
@@ -15,7 +13,6 @@ body {
     color: white;
 }
 
-/* Encabezado */
 header {
     display: flex;
     justify-content: space-between;
@@ -24,7 +21,6 @@ header {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-/* Logo */
 .logo {
     display: flex;
     align-items: center;
@@ -41,7 +37,6 @@ header {
     font-weight: bold;
 }
 
-/* Menú */
 nav ul {
     list-style: none;
     display: flex;
@@ -59,7 +54,6 @@ nav a:hover {
     color: #ffd700;
 }
 
-/* Sección principal */
 .hero {
     display: flex;
     justify-content: center;
@@ -78,7 +72,6 @@ nav a:hover {
     font-size: 20px;
 }
 
-/* GALERÍA */
 .galeria {
     display: flex;
     flex-wrap: wrap;
@@ -113,7 +106,6 @@ nav a:hover {
     font-size: 1.1em;
 }
 
-/* VIDEO */
 #video-promocional {
     text-align: center;
     margin: 40px 0;
@@ -126,7 +118,6 @@ nav a:hover {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); 
 }
 
-/* FORMULARIO DE CONTACTO */
 .contacto {
     padding: 60px 20px;
     background-color: rgba(0, 0, 0, 0.6);
@@ -181,7 +172,6 @@ button:hover {
     margin-bottom: 6px;
 }
 
-/* BOTÓN DE MÚSICA */
 .musica {
     text-align: center;
     padding: 30px;

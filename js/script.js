@@ -1,9 +1,7 @@
-// Cargar contactos existentes al iniciar
 window.onload = function() {
     mostrarContactos();
 };
 
-// Guardar contacto al enviar el formulario
 document.getElementById("form-contacto").addEventListener("submit", function(e) {
     e.preventDefault();
 
@@ -12,24 +10,18 @@ document.getElementById("form-contacto").addEventListener("submit", function(e) 
     let destino = document.getElementById("destino").value;
     let mensaje = document.getElementById("mensaje").value;
 
-    // Crear objeto contacto
     let contacto = { nombre, email, destino, mensaje };
 
-    // Obtener los contactos guardados o crear uno nuevo
     let contactos = JSON.parse(localStorage.getItem("contactos")) || [];
     contactos.push(contacto);
 
-    // Guardar en LocalStorage
     localStorage.setItem("contactos", JSON.stringify(contactos));
 
-    // Limpiar formulario
     document.getElementById("form-contacto").reset();
 
-    // Actualizar lista
     mostrarContactos();
 });
 
-// Mostrar lista de contactos guardados
 function mostrarContactos() {
     let lista = document.getElementById("lista-contactos");
     lista.innerHTML = "";
@@ -43,7 +35,6 @@ function mostrarContactos() {
     });
 }
 
-// 🎵 Control del botón de música
 const musica = document.getElementById("musica-fondo");
 const botonMusica = document.getElementById("btn-musica");
 
