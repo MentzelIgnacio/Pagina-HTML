@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelNow - Aventuras en Italia</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo de TravelNow">
+            <h1>TravelNow</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#galeria">Destinos</a></li>
+                <li><a href="#video">Video</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="texto-principal">
+            <h2>Explorá las ciudades de Italia</h2>
+            <p>Descubrí paisajes únicos y experiencias inolvidables con TravelNow.</p>
+        </div>
+    </section>
+
+    <!--GALERÍA-->
+    <section id="galeria">
+        <h2>Destinos Turísticos</h2>
+        <div class="galeria">
+            <div class="destino">
+                <a href="https://www.booking.com/city/it/rome.es.html" target="_blank">
+                    <img src="img/roma.jpg" alt="Roma">
+                    <p>Roma</p>
+                </a>
+            </div>
+            <div class="destino">
+                <a href="https://www.booking.com/city/it/venice.es.html" target="_blank">
+                    <img src="img/venecia.jpg" alt="Venecia">
+                    <p>Venecia</p>
+                </a>
+            </div>
+            <div class="destino">
+                <a href="https://www.booking.com/city/it/milan.es.html" target="_blank">
+                    <img src="img/milan.jpg" alt="Milán">
+                    <p>Milán</p>
+                </a>
+            </div>
+            <div class="destino">
+                <a href="https://www.booking.com/city/it/naples.es.html" target="_blank">
+                    <img src="img/napoles.jpg" alt="Nápoles">
+                    <p>Nápoles</p>
+                </a>
+            </div>
+            <div class="destino">
+                <a href="https://www.booking.com/city/it/florence.es.html" target="_blank">
+                    <img src="img/florencia.jpg" alt="Florencia">
+                    <p>Florencia</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!--VIDEO PROMOCIONAL-->
+    <section id="video-promocional">
+        <h2>Video Promocional</h2>
+        <video controls autoplay muted loop width="640" height="360">
+            <source src="videos/video.mp4" type="video/mp4">
+            Tu navegador no soporta la reproducción de video.
+        </video>
+    </section>
+
+    <!-- 🎵 MÚSICA DE FONDO -->
+    <section class="musica">
+        <audio id="musica-fondo" loop>
+            <source src="sonido/musica.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <button id="btn-musica">Reproducir música</button>
+    </section>
+
+        <!-- 📬 FORMULARIO DE CONTACTO -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <form id="form-contacto">
+            <label>Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label>Email:</label>
+            <input type="email" id="email" required>
+
+            <label>Destino favorito:</label>
+            <input type="text" id="destino" required>
+
+            <label>Mensaje:</label>
+            <textarea id="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+
+        <h3>Contactos guardados</h3>
+        <ul id="lista-contactos"></ul>
+    </section>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
